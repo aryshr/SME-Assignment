@@ -6,14 +6,14 @@ namespace Particle
     {
         sf::String particles_texture_path;
 
-        float particles_sprite_width;
-        float particles_sprite_height;
+        float particles_sprite_width = 0.0f;
+        float particles_sprite_height = 0.0f;
 
-        float tile_width;
-        float tile_height;
+        float tile_width = 0.0f;
+        float tile_height = 0.0f;
 
-        int number_of_animation_frames;
-        float frame_duration;
+        int number_of_animation_frames = 0;
+        float frame_duration = 0.0f;
 
         ParticleSystemConfig() {};
 

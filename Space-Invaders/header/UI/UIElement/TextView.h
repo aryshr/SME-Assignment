@@ -24,7 +24,7 @@ namespace UI
 			static void loadFont();
 
 			void setFont(FontType font_type);
-			void setFontSize(int font_size);
+			void setFontSize(float font_size);
 			void setTextPosition(sf::Vector2f position);
 			void setTextColor(sf::Color color);
 
@@ -34,7 +34,7 @@ namespace UI
 
 			static void initializeTextView();
 
-			virtual void initialize(sf::String text_value, sf::Vector2f position, FontType font_type = FontType::BUBBLE_BOBBLE, int font_size = default_font_size, sf::Color color = sf::Color::White);
+			virtual void initialize(sf::String text_value, sf::Vector2f position, FontType font_type = FontType::BUBBLE_BOBBLE, float font_size = default_font_size, sf::Color color = sf::Color::White);
 			virtual void update() override;
 			virtual void render() override;
 

@@ -28,14 +28,19 @@ namespace Enemy
 
 			switch (initial_direction)
 			{
-			case Enemy::MovementDirection::LEFT:
-				initial_direction = MovementDirection::RIGHT;
-				return initial_direction;
+				case Enemy::MovementDirection::LEFT:
+					initial_direction = MovementDirection::RIGHT;
+					return initial_direction;
 
-			case Enemy::MovementDirection::RIGHT:
-				initial_direction = MovementDirection::LEFT;
-				return initial_direction;
+				case Enemy::MovementDirection::RIGHT:
+					initial_direction = MovementDirection::LEFT;
+					return initial_direction;
+
+				default:
+					return initial_direction;
 			}
+
+			
 		}
 
 		void ThunderSnakeController::move()

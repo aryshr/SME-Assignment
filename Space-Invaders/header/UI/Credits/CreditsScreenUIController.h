@@ -15,7 +15,7 @@ namespace UI
 			const sf::String game_title = "Outscal Presents - Space Invaders";
 
 			const float text_top_offset = 260.f;
-			const int font_size = 110;
+			const float font_size = 110.f;
 
 			const float button_width = 400.f;
 			const float button_height = 140.f;

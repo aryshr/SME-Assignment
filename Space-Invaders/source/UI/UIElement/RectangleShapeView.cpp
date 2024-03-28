@@ -56,7 +56,7 @@ namespace UI
 
 		void RectangleShapeView::setOutlineThickness(int outline_thickness)
 		{
-			rectangle_shape.setOutlineThickness(outline_thickness);
+			rectangle_shape.setOutlineThickness((float)outline_thickness);
 		}
 
 		sf::Vector2f RectangleShapeView::getSize()

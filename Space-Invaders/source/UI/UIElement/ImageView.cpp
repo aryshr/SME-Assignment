@@ -46,7 +46,7 @@ namespace UI
 
         void ImageView::setScale(float width, float height)
         {
-            setScale(width, height, image_sprite.getTexture()->getSize().x, image_sprite.getTexture()->getSize().y);
+            setScale(width, height, (float)image_sprite.getTexture()->getSize().x, (float)image_sprite.getTexture()->getSize().y);
         }
 
         void ImageView::setScale(float width, float height, float tile_width, float tile_height)
@@ -75,7 +75,7 @@ namespace UI
         void ImageView::setImageAlpha(float alpha)
         {
             sf::Color color = image_sprite.getColor();
-            color.a = alpha;
+            color.a = (uint8_t)alpha;
             image_sprite.setColor(color);
         }
 

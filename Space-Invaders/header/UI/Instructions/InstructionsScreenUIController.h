@@ -20,7 +20,7 @@ namespace UI
 			static const int number_of_instructions = 4;
 			const float top_offset = 200.f;
 			const float text_spacing = 95.f;
-			const int font_size = 50;
+			const float font_size = 50.f;
 
 			const sf::Color text_color = sf::Color::White;
 

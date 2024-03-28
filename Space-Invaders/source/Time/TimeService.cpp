@@ -27,7 +27,7 @@ namespace Time
 	float TimeService::calculateDeltaTime()
 	{
 		// Calculate time difference in microseconds between the current and previous frame.
-		int delta = std::chrono::duration_cast<std::chrono::microseconds>(
+		int delta = (int)std::chrono::duration_cast<std::chrono::microseconds>(
 			std::chrono::steady_clock::now() - previous_time).count();
 
 		// To convert delta time from microseconds into seconds.

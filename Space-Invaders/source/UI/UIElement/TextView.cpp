@@ -14,7 +14,7 @@ namespace UI
 
 		TextView::~TextView() = default;
 
-		void TextView::initialize(sf::String text_value, sf::Vector2f position, FontType font_type, int font_size, sf::Color color)
+		void TextView::initialize(sf::String text_value, sf::Vector2f position, FontType font_type, float font_size, sf::Color color)
 		{
 			UIView::initialize();
 
@@ -69,9 +69,9 @@ namespace UI
 			}
 		}
 
-		void TextView::setFontSize(int font_size)
+		void TextView::setFontSize(float font_size)
 		{
-			text.setCharacterSize(font_size);
+			text.setCharacterSize((int)font_size);
 		}
 
 		void TextView::setTextPosition(sf::Vector2f position)

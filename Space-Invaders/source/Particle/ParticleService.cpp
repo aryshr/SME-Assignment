@@ -42,6 +42,8 @@ namespace Particle
 		{
 			case Particle::ParticlesType::EXPLOSION:
 				return explosion_particle_system_config;
+			default:
+				return {"", 0, 0, 0, 0, 0, 0};
 		}
 	}
 

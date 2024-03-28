@@ -23,7 +23,7 @@ namespace UI
 			const float button_height = 140.f;
 
 			const float text_top_offset = 150.f;
-			const int font_size = 80;
+			const float font_size = 80.0f;
 
 			UIElement::ImageView* background_image;
 			UIElement::TextView* high_score_text;

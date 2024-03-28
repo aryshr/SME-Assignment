@@ -51,17 +51,20 @@ namespace Enemy
 	{
 		switch (enemy_controller->getEnemyType())
 		{
-		case::Enemy::EnemyType::ZAPPER:
-			return Config::zapper_texture_path;
+			case::Enemy::EnemyType::ZAPPER:
+				return Config::zapper_texture_path;
 
-		case::Enemy::EnemyType::THUNDER_SNAKE:
-			return Config::thunder_snake_texture_path;
+			case::Enemy::EnemyType::THUNDER_SNAKE:
+				return Config::thunder_snake_texture_path;
 
-		case::Enemy::EnemyType::SUBZERO:
-			return Config::subzero_texture_path;
+			case::Enemy::EnemyType::SUBZERO:
+				return Config::subzero_texture_path;
 
-		case::Enemy::EnemyType::UFO:
-			return Config::ufo_texture_path;
+			case::Enemy::EnemyType::UFO:
+				return Config::ufo_texture_path;
+
+			default:
+				return "";
 		}
 	}
 

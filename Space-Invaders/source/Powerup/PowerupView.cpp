@@ -44,17 +44,19 @@ namespace Powerup
 	{
 		switch (powerup_controller->getPowerupType())
 		{
-		case::Powerup::PowerupType::SHIELD:
-			return Config::shield_texture_path;
+			case::Powerup::PowerupType::SHIELD:
+				return Config::shield_texture_path;
 
-		case::Powerup::PowerupType::TRIPPLE_LASER:
-			return Config::tripple_laser_texture_path;
+			case::Powerup::PowerupType::TRIPPLE_LASER:
+				return Config::tripple_laser_texture_path;
 
-		case::Powerup::PowerupType::RAPID_FIRE:
-			return Config::rapid_fire_texture_path;
+			case::Powerup::PowerupType::RAPID_FIRE:
+				return Config::rapid_fire_texture_path;
 
-		case::Powerup::PowerupType::OUTSCAL_BOMB:
-			return Config::outscal_bomb_texture_path;
+			case::Powerup::PowerupType::OUTSCAL_BOMB:
+				return Config::outscal_bomb_texture_path;
+			default:
+				return "Invalid";
 		}
 	}
 

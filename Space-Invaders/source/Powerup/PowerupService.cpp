@@ -38,17 +38,20 @@ namespace Powerup
 	{
 		switch (powerup_type)
 		{
-		case::Powerup::PowerupType::SHIELD:
-			return new ShieldController(Powerup::PowerupType::SHIELD);
+			case::Powerup::PowerupType::SHIELD:
+				return new ShieldController(Powerup::PowerupType::SHIELD);
 
-		case::Powerup::PowerupType::RAPID_FIRE:
-			return new RapidFireController(Powerup::PowerupType::RAPID_FIRE);
+			case::Powerup::PowerupType::RAPID_FIRE:
+				return new RapidFireController(Powerup::PowerupType::RAPID_FIRE);
 
-		case::Powerup::PowerupType::TRIPPLE_LASER:
-			return new TrippleLaserController(Powerup::PowerupType::TRIPPLE_LASER);
+			case::Powerup::PowerupType::TRIPPLE_LASER:
+				return new TrippleLaserController(Powerup::PowerupType::TRIPPLE_LASER);
 
-		case::Powerup::PowerupType::OUTSCAL_BOMB:
-			return new OutscalBombController(Powerup::PowerupType::OUTSCAL_BOMB);
+			case::Powerup::PowerupType::OUTSCAL_BOMB:
+				return new OutscalBombController(Powerup::PowerupType::OUTSCAL_BOMB);
+
+			default:
+				return nullptr;
 		}
 	}
 

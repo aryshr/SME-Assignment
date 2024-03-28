@@ -13,7 +13,7 @@ namespace Enemy
 
 		std::vector<EnemyController*> enemy_list;
 		std::vector<EnemyController*> flagged_enemy_list;
-		float spawn_timer;
+		float spawn_timer = 0;
 
 		void updateSpawnTimer();
 		void processEnemySpawn();
